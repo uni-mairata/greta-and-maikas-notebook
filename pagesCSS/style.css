@@ -1,4 +1,6 @@
 html, body {
   height: 100%;
   width: 100%;
+  
+ cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
 }
