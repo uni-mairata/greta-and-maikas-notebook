@@ -1,0 +1,36 @@
+.gallery-pic-cinnamonsatin {
+  height: 470px;
+  width: 400px;
+  object-fit: cover;
+  border-left: 10px solid #B56576;
+  border-right: 10px solid #B56576;
+  border-bottom: 60px solid #B56576;
+  border-top: 25px solid #B56576;
+}
+.gallery-pic-blue {
+  height: 540px;
+  width: 400px;
+  object-fit: cover;
+  border-left: 10px solid #355070;
+  border-right: 10px solid #355070;
+  border-bottom: 60px solid #355070;
+  border-top: 25px solid #355070;
+}
+.gallery-pic-violet {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  border-left: 10px solid #355070;
+  border-right: 10px solid #355070;
+  border-bottom: 60px solid #355070;
+  border-top: 25px solid #355070;
+}
+
+
+
+.dropshadow-gallery-blue {
+  filter: drop-shadow(10px 10px 10px #355070);
+}
+.dropshadow-gallery-cinnamonsatin {
+  filter: drop-shadow(10px 10px 10px #B56576);
+}

@@ -1,6 +1,103 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  
- cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+/* CSS HEX Colors */
+/* 
+  --artichoke: #a3a380ff;
+  --medium-champagne: #d6ce93ff;
+  --beige: #efebceff; BG COLOR 2
+  --tumbleweed: #d8a48fff;
+  --old-rose: #bb8588ff;
+  --y-in-mn-blue: #355070ff; BG COLOR 1
+  --chinese-violet: #6d597aff;
+  --cinnamon-satin: #b56576ff;
+  --candy-pink: #e56b6fff; 
+*/
+
+html {
+  /*   TODO: change cursor */
+  /*   cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; */
 }
+
+.clear-border {
+  padding: 30px;
+}
+
+body {
+  background-image: url("../images/grid_paper2_white.jpg");
+  background-repeat: round;
+}
+
+.left {
+  width: 48%; 
+  float: left; 
+/*   background: green; */
+}
+
+.right {
+  margin-left: 50%; 
+/*   background: blue; */
+}
+
+
+/* text settings */
+h1 {
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+  /*   text-align: right; */
+}
+
+p, li {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+
+/* Polaroid images */
+.gallery-pic {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  border-bottom: 60px solid white;
+  border-top: 25px solid white;
+}
+
+
+
+.row {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+}
+
+.column {
+  flex: 50%;
+  padding: 15px;
+  text-align: center;
+}
+
+.dropshadow {
+  filter: drop-shadow(10px 10px 4px #E1B894);
+}
+
+.dropshadow-gallery {
+  filter: drop-shadow(10px 10px 10px #E1B894);
+}
+
+
+
+.caption {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  top: -60px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 0 0 -50px 0;
+}
+
+
