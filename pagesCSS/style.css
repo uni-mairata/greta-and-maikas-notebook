@@ -1,4 +1,4 @@
-/* CSS HEX Colors */
+/* CSS HEX Colors*/
 /* 
   --artichoke: #a3a380ff;
   --medium-champagne: #d6ce93ff;
@@ -25,19 +25,10 @@ body {
   background-repeat: round;
 }
 
-.left {
-  width: 48%; 
-  float: left; 
-/*   background: green; */
-}
-
-.right {
-  margin-left: 50%; 
-/*   background: blue; */
-}
 
 
 /* text settings */
+
 h1 {
   font-size: 30px;
   font-family: 'Righteous', cursive;
@@ -45,9 +36,7 @@ h1 {
 
 h2 {
   font-size: 20px;
-  line-height: 10px;
   font-family: 'Gloria Hallelujah', cursive;
-  /*   text-align: right; */
 }
 
 p, li {
@@ -56,7 +45,8 @@ p, li {
 
 
 
-/* Polaroid images */
+/* polaroid images */
+
 .gallery-pic {
   height: 400px;
   width: 400px;
@@ -66,8 +56,6 @@ p, li {
   border-bottom: 60px solid white;
   border-top: 25px solid white;
 }
-
-
 
 .row {
   display: flex;
@@ -89,8 +77,6 @@ p, li {
   filter: drop-shadow(10px 10px 10px #E1B894);
 }
 
-
-
 .caption {
   color: black;
   font-weight: bold;
@@ -101,3 +87,74 @@ p, li {
 }
 
 
+
+/* text on top of image */
+
+.box{
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+
+.box .text{
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;        
+  text-align: center;
+  top: 40%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(239, 235, 206, 0.8);
+  /*     color: #355070; */
+  width: 60%; /* Set the width of the positioned div */
+}
+
+
+
+/* responsive web design */
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+/* the zoom property has not yet been implemented for
+Internet Explorer 10, 11 and Microsoft Edge */
+@-ms-viewport {
+  width: device-width ;
+}
+
+/* for screens that are 320 pixels or less will be
+put in this section */
+@media screen and (max-width:320px) {
+  
+}
+
+/* for screens that are 320 pixels or more, the screen will
+be split in 2 with one side being the title and the other
+side being the nav bar menu*/
+@media only screen and (min-width: 850px) {
+  /*   use this whenever testing is needed with this */
+  /*
+  body {
+    background-image: url("../images/grid_paper1_pink.jpg");
+  } */
+  
+  .left {
+    width: 48%; 
+    float: left; 
+  /*   background: green; */
+  }
+  
+  .right {
+    margin-left: 50%; 
+  /*   background: blue; */
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /*   only highlight text when using mobile */
+  .highlight-main-text {
+    background:rgba(216, 164, 143,0.15);
+    opacity:1 !important;
+  }
+}
