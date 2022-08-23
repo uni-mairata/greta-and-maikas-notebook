@@ -1,0 +1,86 @@
+body {
+  /*   color palette */
+  --artichoke: #a3a380ff;
+  --medium-champagne: #d6ce93ff;
+  --beige: #efebceff; 
+  --tumbleweed: #d8a48fff;
+  --old-rose: #bb8588ff;
+  --y-in-mn-blue: #355070ff; 
+  --chinese-violet: #6d597aff;
+  --cinnamon-satin: #b56576ff;
+  --candy-pink: #e56b6fff; 
+}
+
+
+
+/* custom polaroid image */
+
+.gallery-pic-white {
+  /*   makes image fit to the screen size */
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  
+  object-fit: cover;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  border-bottom: 60px solid white;
+  border-top: 25px solid white;
+}
+
+/* the shadow cast by the images */
+.dropshadow {
+  filter: drop-shadow(10px 10px 4px #e3e3e3);
+}
+
+.dropshadow-gallery {
+  filter: drop-shadow(10px 10px 10px #e3e3e3);
+}
+
+/* custom caption */
+.m-caption {
+  color: var(--y-in-mn-blue);
+  font-weight: bold;
+  position: relative;
+  top: -60px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 0 0 -50px 0;
+}
+
+/* adds extra padding to make sure images don't overlap when on a smaller screen */
+.m-column {
+    padding: 25px;
+  }
+
+.m-row {
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* when screen size is large enough / responsive web design */
+
+@media only screen and (min-width: 980px) {
+  /*   use this whenever testing is needed with this */
+  /*
+  body {
+    background-image: url("../images/grid_paper1_pink.jpg");
+  } */
+  /*   displays images 3 in a row when screen size is large enough */
+  .m-row {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+  }
+  
+  .m-column {
+    flex: 50%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .gallery-pic-white {
+    height: 500px;
+  }
+  
+}

@@ -1,28 +1,62 @@
-/* CSS HEX Colors*/
-/* 
-  --artichoke: #a3a380ff;
-  --medium-champagne: #d6ce93ff;
-  --beige: #efebceff; BG COLOR 2
-  --tumbleweed: #d8a48fff;
-  --old-rose: #bb8588ff;
-  --y-in-mn-blue: #355070ff; BG COLOR 1
-  --chinese-violet: #6d597aff;
-  --cinnamon-satin: #b56576ff;
-  --candy-pink: #e56b6fff; 
-*/
-
 html {
   /*   TODO: change cursor */
   /*   cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; */
+}
+
+body {
+  background-image: url("../images/grid_paper2_white.jpg");
+  background-repeat: round;
+
+  /*   color palette */
+  --artichoke: #a3a380ff;
+  --medium-champagne: #d6ce93ff;
+  --beige: #efebceff; 
+  --tumbleweed: #d8a48fff;
+  --old-rose: #bb8588ff;
+  --y-in-mn-blue: #355070ff; 
+  --chinese-violet: #6d597aff;
+  --cinnamon-satin: #b56576ff;
+  --candy-pink: #e56b6fff; 
+}
+
+
+
+/* for specific elements */
+
+.happiness-ticket {
+  height: 170px;
+  position: relative; 
+  top: 20px; 
+  padding: 0px; 
+  z-index: 2;
+  transform: rotate(20deg);
+}
+
+.away-from-margin-right {
+  margin-right: 90px;
 }
 
 .clear-border {
   padding: 30px;
 }
 
-body {
-  background-image: url("../images/grid_paper2_white.jpg");
-  background-repeat: round;
+.overlap-bottom {
+  position: relative;
+  z-index: -1;
+  top: -12px;
+  left: -12px;
+}
+
+.overlap-top {
+  z-index: 1;
+  position: relative;
+  top: 160px;
+}
+
+/* make the name of the site smaller on pages other than index.html */
+.small-title-div {
+  float:left; 
+  margin-left: 100px;
 }
 
 
@@ -45,9 +79,16 @@ p, li {
 
 
 
-/* polaroid images */
+/* change line style */
+hr.credits-page {
+  border-top: 2px dashed;
+}
 
-.gallery-pic {
+
+
+/* default polaroid images */
+
+.default-gallery-pic {
   height: 400px;
   width: 400px;
   object-fit: cover;
@@ -69,15 +110,15 @@ p, li {
   text-align: center;
 }
 
-.dropshadow {
+.default-dropshadow {
   filter: drop-shadow(10px 10px 4px #E1B894);
 }
 
-.dropshadow-gallery {
+.default-dropshadow-gallery {
   filter: drop-shadow(10px 10px 10px #E1B894);
 }
 
-.caption {
+.default-caption {
   color: black;
   font-weight: bold;
   position: relative;
@@ -90,12 +131,23 @@ p, li {
 
 /* text on top of image */
 
-.box{
+.overlap-box{
   position: relative;
   display: inline-block; /* Make the width of box same as image */
 }
 
-.box .text{
+.overlap-box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%; /* Adjust this value to move the positioned div up and down */
+  width: 100%; /* Set the width of the positioned div */
+}
+
+.overlap-box .menu-text{
   position: absolute;
   z-index: 999;
   margin: 0 auto;
@@ -104,8 +156,40 @@ p, li {
   text-align: center;
   top: 40%; /* Adjust this value to move the positioned div up and down */
   background: rgba(239, 235, 206, 0.8);
-  /*     color: #355070; */
   width: 60%; /* Set the width of the positioned div */
+}
+
+
+
+/* highlight when selecting text */
+
+/* for common browsers */
+::selection {
+    background-color: rgba(216, 164, 143, 0.8);
+    color: white;
+}
+
+/* for Mozilla based browsers */
+::-moz-selection {
+    background-color: rgba(216, 164, 143, 0.8);
+    color: white;
+}
+
+/* for other browsers */
+::-o-selection {
+    background-color: rgba(216, 164, 143, 0.8);
+    color: white;
+}
+
+::-ms-selection {
+    background-color: rgba(216, 164, 143, 0.8);
+    color: white;
+}
+
+/* For Webkit */
+::-webkit-selection {
+    background-color: rgba(216, 164, 143, 0.8);
+    color: white;
 }
 
 
@@ -123,16 +207,10 @@ Internet Explorer 10, 11 and Microsoft Edge */
   width: device-width ;
 }
 
-/* for screens that are 320 pixels or less will be
-put in this section */
-@media screen and (max-width:320px) {
-  
-}
-
-/* for screens that are 320 pixels or more, the screen will
+/* for screens that are 980 pixels or more, the screen will
 be split in 2 with one side being the title and the other
 side being the nav bar menu*/
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 980px) {
   /*   use this whenever testing is needed with this */
   /*
   body {
@@ -142,12 +220,17 @@ side being the nav bar menu*/
   .left {
     width: 48%; 
     float: left; 
-  /*   background: green; */
   }
   
   .right {
     margin-left: 50%; 
-  /*   background: blue; */
+  }
+  
+  .vertical {
+    border-left: 2px solid black;
+    height: 200%;
+    position:absolute;
+    left: 48%;
   }
 }
 
@@ -156,5 +239,11 @@ side being the nav bar menu*/
   .highlight-main-text {
     background:rgba(216, 164, 143,0.15);
     opacity:1 !important;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .hide-when-mobile {
+    display: none;
   }
 }

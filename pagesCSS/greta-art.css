@@ -1,5 +1,27 @@
+.g-caption {
+  font-weight: bold;
+  position: relative;
+  top: -60px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 0 0 -50px 0;
+}
+.g-caption:hover {
+  filter: none;
+  transform: scale(2, 2) rotate(0deg) !important;
+  transition: all 0.40s;
+}
+
 .gallery-pic-cinnamonsatin {
   height: 470px;
+  width: 400px;
+  object-fit: cover;
+  border-left: 10px solid #B56576;
+  border-right: 10px solid #B56576;
+  border-bottom: 60px solid #B56576;
+  border-top: 25px solid #B56576;
+}
+.gallery-pic-cinnamonsatinshort {
+  height: 270px;
   width: 400px;
   object-fit: cover;
   border-left: 10px solid #B56576;
@@ -22,13 +44,45 @@
   height: 500px;
   width: 400px;
   object-fit: cover;
-  border-left: 10px solid #355070;
-  border-right: 10px solid #355070;
-  border-bottom: 60px solid #355070;
-  border-top: 25px solid #355070;
+  border-left: 10px solid #6D597A;
+  border-right: 10px solid #6D597A;
+  border-bottom: 60px solid #6D597A;
+  border-top: 25px solid #6D597A;
+}
+.gallery-pic-rose {
+  height: 600px;
+  width: 400px;
+  object-fit: cover;
+  border-left: 10px solid #BB8588;
+  border-right: 10px solid #BB8588;
+  border-bottom: 60px solid #BB8588;
+  border-top: 25px solid #BB8588;
+}
+.gallery-pic-candy {
+  height: 600px;
+  width: 400px;
+  object-fit: cover;
+  border-left: 10px solid #E56B6F;
+  border-right: 10px solid #E56B6F;
+  border-bottom: 60px solid #E56B6F;
+  border-top: 25px solid #E56B6F;
 }
 
-
+/*.gallery-pic-candy:hover {
+  filter: none;
+  transform: scale(1.25, 1.25) rotate(0deg) !important;
+  transition: all 1s;
+}
+*/
+.gallery-pic-candyalien {
+  height: 460px;
+  width: 440px;
+  object-fit: cover;
+  border-left: 10px solid #E56B6F;
+  border-right: 10px solid #E56B6F;
+  border-bottom: 60px solid #E56B6F;
+  border-top: 25px solid #E56B6F;
+}
 
 .dropshadow-gallery-blue {
   filter: drop-shadow(10px 10px 10px #355070);
@@ -36,3 +90,13 @@
 .dropshadow-gallery-cinnamonsatin {
   filter: drop-shadow(10px 10px 10px #B56576);
 }
+.dropshadow-gallery-rose {
+  filter: drop-shadow(10px 10px 10px #BB8588);
+}
+.dropshadow-gallery-violet {
+  filter: drop-shadow(10px 10px 10px #6D597A);
+}
+.dropshadow-gallery-candy {
+  filter: drop-shadow(10px 10px 10px #E56B6F);
+}
+/* stackoverflow.com/questions/49488582/css-image-zoom-and-center-on-hover */ 

@@ -1,8 +1,21 @@
+body {
+  /*   color palette */
+  --artichoke: #a3a380ff;
+  --medium-champagne: #d6ce93ff;
+  --beige: #efebceff; 
+  --tumbleweed: #d8a48fff;
+  --old-rose: #bb8588ff;
+  --y-in-mn-blue: #355070ff; 
+  --chinese-violet: #6d597aff;
+  --cinnamon-satin: #b56576ff;
+  --candy-pink: #e56b6fff; 
+}
+
 /* menu layout */
 
 .menu-border {
   border: 2px solid black;
-  outline: #A3A380 solid 10px;
+  outline: var(--artichoke) solid 10px;
   background-color: white;
   padding: 10px;
 }
@@ -17,6 +30,7 @@
 .menu ol { 
   counter-reset:menu;
 }
+
   
   
 /* main menu */
@@ -96,10 +110,9 @@
 
 
 
-/* responsive web design */
-/* only have the cool animation stuff if you're not on mobile */
+/* responsive web design AKA only have the cool animation stuff if you're not on mobile */
 
-@media only screen and (min-width: 850px) {  
+@media only screen and (min-width: 980px) {  
   /* main menu */
   
   .menu {
