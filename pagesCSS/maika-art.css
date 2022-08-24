@@ -61,11 +61,6 @@ body {
 /* when screen size is large enough / responsive web design */
 
 @media only screen and (min-width: 980px) {
-  /*   use this whenever testing is needed with this */
-  /*
-  body {
-    background-image: url("../images/grid_paper1_pink.jpg");
-  } */
   /*   displays images 3 in a row when screen size is large enough */
   .m-row {
   display: flex;

@@ -85,18 +85,18 @@
 }
 
 .dropshadow-gallery-blue {
-  filter: drop-shadow(10px 10px 10px #355070);
+  filter: drop-shadow(15px 15px 15px #355070);
 }
 .dropshadow-gallery-cinnamonsatin {
-  filter: drop-shadow(10px 10px 10px #B56576);
+  filter: drop-shadow(15px 15px 15px #B56576);
 }
 .dropshadow-gallery-rose {
-  filter: drop-shadow(10px 10px 10px #BB8588);
+  filter: drop-shadow(15px 15px 15px #BB8588);
 }
 .dropshadow-gallery-violet {
-  filter: drop-shadow(10px 10px 10px #6D597A);
+  filter: drop-shadow(15px 15px 15px #6D597A);
 }
 .dropshadow-gallery-candy {
-  filter: drop-shadow(10px 10px 10px #E56B6F);
+  filter: drop-shadow(15px 15px 15px #E56B6F);
 }
 /* stackoverflow.com/questions/49488582/css-image-zoom-and-center-on-hover */ 

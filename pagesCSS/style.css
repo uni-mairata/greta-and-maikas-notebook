@@ -1,6 +1,10 @@
+/* custom cursors */
 html {
-  /*   TODO: change cursor */
-  /*   cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; */
+    cursor:url("../images/icons8-cursor-64_50.png"), auto;
+}
+
+a {
+    cursor:url("../images/icons8-cursor-64_hand_50.png"), auto;
 }
 
 body {
@@ -211,12 +215,6 @@ Internet Explorer 10, 11 and Microsoft Edge */
 be split in 2 with one side being the title and the other
 side being the nav bar menu*/
 @media only screen and (min-width: 980px) {
-  /*   use this whenever testing is needed with this */
-  /*
-  body {
-    background-image: url("../images/grid_paper1_pink.jpg");
-  } */
-  
   .left {
     width: 48%; 
     float: left; 
