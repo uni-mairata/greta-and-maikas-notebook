@@ -27,6 +27,13 @@ body {
 
 /* for specific elements */
 
+.fixed-to-corner {
+  position: fixed;
+  z-index: 10;
+  right: 50px;
+  bottom: 50px;
+}
+
 .happiness-ticket {
   height: 170px;
   position: relative; 
@@ -226,7 +233,7 @@ side being the nav bar menu*/
   
   .vertical {
     border-left: 2px solid black;
-    height: 200%;
+    height: 230%;
     position:absolute;
     left: 48%;
   }

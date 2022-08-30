@@ -66,7 +66,7 @@ body {
   justify-content:flex-start; /*shrink towards text*/
   color:currentColor;
   text-decoration:none;
-  padding:0.3rem 0; /* avoid flickin' */
+  padding:0.3rem 0; /* avoid flickering */
   order:0;
   font-size: 20px;
 }
