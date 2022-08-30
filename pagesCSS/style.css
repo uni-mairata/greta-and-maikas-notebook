@@ -1,10 +1,11 @@
 /* custom cursors */
 html {
-    cursor:url("../images/icons8-cursor-64_50.png"), auto;
+  cursor:url("../images/icons8-cursor-64_50.png"), auto;
+  scroll-behavior: smooth;
 }
 
 a {
-    cursor:url("../images/icons8-cursor-64_hand_50.png"), auto;
+  cursor:url("../images/icons8-cursor-64_hand_50.png"), auto;
 }
 
 body {
@@ -26,11 +27,17 @@ body {
 
 
 /* for specific elements */
+.fixed-to-corner-scroll {
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  bottom: 50px;
+}
 
 .fixed-to-corner {
   position: fixed;
   z-index: 10;
-  right: 50px;
+  right: 110px;
   bottom: 50px;
 }
 
@@ -84,8 +91,13 @@ h2 {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-p, li {
+p, li, a {
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
