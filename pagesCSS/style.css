@@ -41,15 +41,6 @@ body {
   bottom: 50px;
 }
 
-.happiness-ticket {
-  height: 170px;
-  position: relative; 
-  top: 20px; 
-  padding: 0px; 
-  z-index: 2;
-  transform: rotate(20deg);
-}
-
 .away-from-margin-right {
   margin-right: 90px;
 }
@@ -77,6 +68,22 @@ body {
   margin-left: 100px;
 }
 
+.credit-link a {
+  color: var(--candy-pink);
+}
+
+#happiness-ticket {
+  height: 170px;
+  position: relative; 
+  top: 20px; 
+  padding: 0px; 
+  z-index: 2;
+  transform: rotate(20deg);
+}
+
+#main-page-caption {
+  clear: right;
+}
 
 
 /* text settings */
